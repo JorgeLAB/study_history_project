@@ -1,18 +1,12 @@
 require 'pry'
+require 'sqlite3'
 
 class StudyItem
-	attr_reader :id, :title, :category
-
-	@@next_id = 1
-	@@study_items = []
+	attr_accessor :title, :category
 
 	def initialize(title:, category:)
-		@id = @@next_id
 		@title = title
 		@category = category
-
-		@@next_id += 1
-		@@study_items << self
 	end
 
 	def include?(query,attribute)
@@ -20,7 +14,7 @@ class StudyItem
 	end
 
 	def to_s
-		"##{id} - #{title} - #{category}"
+		"##{title} - #{category}"
 	end
 
 	def self.register
@@ -28,25 +22,67 @@ class StudyItem
 		title = gets.chomp
 		print "Digite a categoria do seu item de estudo: "
 		category = gets.chomp
+
 		puts "Item '#{title}' da categoria '#{category}' cadastrado com sucesso!"
-		self.new(title: title, category: category)
+
+    self.new(title: title, category: category)
+
+    begin
+
+      db = SQLite3::Database.open "../../db/study_history.db"
+      db.execute("INSERT INTO StudyItems(Title, Category) VALUES (?, ?)", [@title, @category])
+
+    rescue SQLite3::Exception => e
+
+      puts "Exception occurred"
+      puts e
+
+    ensure
+      db.close if db
+    end
 	end
 
 	def self.all
-		@@study_items
+    begin
+      db = SQLite3::Database.open "../../db/study_history.db"
+      study_items = db.prepare "SELECT * FROM StudyItems"
+
+      study_items.each do |row|
+        p row
+      end
+
+    rescue SQLite3::Exception => e
+
+      puts "Exception occurred"
+      puts e
+
+    ensure
+      study_items.close if study_items
+      db.close if db
+    end
 	end
 
-	def self.search(term);end
+	def self.search(term)
 
-	def self.delete
-		puts '==== List de items ===='
+  end
 
-		puts 'Qual o id do Item de estudo você quer apagar?'
-		id = gets.to_i
-		study_item = StudyItem.all.detect do |study_item|
-			study_item.id == id
-		end
-		StudyItem.all.delete(study_item)
-	end
+	def self.destroy
+  	puts '==== List de items ===='
 
+    self.all
+  	puts 'Qual o id do Item de estudo você quer apagar?'
+  	id = gets.to_i
+
+    begin
+
+      db = SQLite3::Database.open "../../db/study_history.db"
+      study_item = db.execute("DELETE FROM StudyItems WHERE ID=?", [id])
+
+    rescue SQLite3::Exception => e
+      puts "Exception occurred"
+      puts e
+    ensure
+      db.close if db
+    end
+  end
 end
