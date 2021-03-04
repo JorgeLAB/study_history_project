@@ -16,7 +16,7 @@
     - :computer: [Linux](https://ubuntu.com/download/desktop)
     - [![Ruby](https://cdn.emojidex.com/emoji/mdpi/Ruby.png "Ruby") ](https://www.ruby-lang.org) [Ruby](https://www.ruby-lang.org/pt/documentation/installation/)
 
-# Referências
+## Referências
 - [CampusCode - OO](https://campuscode.com.br/conteudos/boas-fontes-e-conteudos-para-comecar-e-evoluir-em-ruby)
 
 <!-- MARKDOWN LINKS & IMAGES -->
