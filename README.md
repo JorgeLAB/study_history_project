@@ -2,8 +2,8 @@
   <h2 align="right"> Histórico de Estudo</h2>
 </p>
 
-## Programa de gerenciamento para conteúdo estudo em PT-BR
-## ...
+### Programa de gerenciamento para conteúdo descritivo de estudos em PT-BR
+### ...
 ## Branchs
 #### O projeto principal ( branch main ) ainda não foi iniciado.
 
