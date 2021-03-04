@@ -5,3 +5,4 @@ ruby '2.7.1'
 
 gem 'colorize'
 gem 'pry-byebug'
+gem 'sqlite3'
