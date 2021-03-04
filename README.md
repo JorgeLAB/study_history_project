@@ -1,5 +1,5 @@
 <p align="center">
-  <h2 align="center"> Histórico de Estudo</h2>
+  <h2 align="right"> Histórico de Estudo</h2>
 </p>
 
 ## Programa de gerenciamento para conteúdo estudo em PT-BR
