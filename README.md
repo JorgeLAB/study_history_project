@@ -1,6 +1,4 @@
-<p align="center">
-  <h2 align="right"> Histórico de Estudo</h2>
-</p>
+<h2 align="right"> Histórico de Estudo</h2>
 
 ### Programa de gerenciamento para conteúdo descritivo de estudos em PT-BR
 ### ...
