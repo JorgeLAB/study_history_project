@@ -5,7 +5,7 @@
 ## Programa de gerenciamento para conteúdo estudo em PT-BR
 ## ...
 
-### O projeto em principal ( branch main ) ainda não foi inicial.
+### O projeto principal ( branch main ) ainda não foi iniciado.
 
 ### :point_right: A branch [follow_live](https://github.com/JorgeLAB/study_history_project/tree/follow_live) possue a continuação da implementação do projeto realizado nas [lives da CampusCode](https://youtu.be/2OUyXz7BqdU)
 
