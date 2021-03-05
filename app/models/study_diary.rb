@@ -8,4 +8,3 @@ def search_items
     item.include?(term,"title")
   end
 end
-

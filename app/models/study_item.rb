@@ -63,7 +63,6 @@ class StudyItem
 	end
 
 	def self.search(term)
-
   end
 
 	def self.destroy

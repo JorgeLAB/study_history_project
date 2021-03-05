@@ -1,0 +1,16 @@
+#!/usr/bin/env ruby
+require 'fileutils'
+
+APP_ROOT = File.expand_path('..', __dir__)
+
+def system!(*args)
+  system(*args) || abort("\n== Command #{args} failed ==")
+end
+
+FileUtils.chdir APP_ROOT do
+  puts <<~VISUAL
+        \s\s\s\s\s\s\s🇸​ ​​​​🇹​ ​​​​🇺 ​​​​​🇩 ​​​​​🇾​​​​​  🇩​​​​​ 🇮​​​​​ 🇦​​​​​ 🇷​​​​​ 🇾​​​​​\n
+  VISUAL
+
+  system!('ruby app/interface_user_console/ui.rb')
+end

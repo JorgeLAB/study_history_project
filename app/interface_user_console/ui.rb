@@ -8,7 +8,7 @@ DELETE   = 4
 EXIT     = 5
 
 def welcome
-  'Bem-vindo ao Diário de Estudos, seu companheiro para estudar!'
+  "Bem-vindo ao Diário de Estudos, seu companheiro para estudar!\n\n"
 end
 
 def clear
@@ -36,7 +36,6 @@ def menu
   gets.to_i
 end
 
-clear
 puts welcome
 option = menu
 
