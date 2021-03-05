@@ -9,25 +9,27 @@
 
 ## Como executar o projeto
 
-1 - Clone o projeto para sua máquina local
-...`$ git clone https://github.com/JorgeLAB/study_history_project.git`
+1. Clone o projeto para sua máquina local
+>`$ git clone https://github.com/JorgeLAB/study_history_project.git`
 
-2 - Dê permissão de acesso há pasta bin/ do projeto
-...`$ chmod +x bin/`
+2. Dê permissão de acesso há pasta bin/ do projeto
+>`$ chmod +x bin/`
 
-3 - Rode o programa de configurações iniciais do projeto
-...`$ bin/setup`
-
-4 - Execute o projeto
-...`$ bin/start`
-
-5 - Pronto você chegou ao menu principal :smiley:
+3. Rode o programa de configurações iniciais do projeto
+>`$ bin/setup`
+>
+><img src="https://github.com/JorgeLAB/study_history_project/blob/follow_live/public/images/bin_setup_diario_de_estudo.png" height="auto" width="600" alt="Resultado de configuração"/>
+4. Execute o projeto
+>`$ bin/start`
+>
+><img src="https://github.com/JorgeLAB/study_history_project/blob/follow_live/public/images/menu_principal.png" height="auto" width="600" alt="menu principal"/>
+5. Pronto você chegou ao menu principal :smiley:
 
 ## **:warning:** Requisitos
 
 - **🛠 Development**
     - :computer: [Linux](https://ubuntu.com/download/desktop)
-    - [![Ruby](https://cdn.emojidex.com/emoji/mdpi/Ruby.png "Ruby") ](https://www.ruby-lang.org) [Ruby](https://www.ruby-lang.org/pt/documentation/installation/)
+    - [![Ruby](https://cdn.emojidex.com/emoji/mdpi/Ruby.png "Ruby") ](https://www.ruby-la ng.org) [Ruby](https://www.ruby-lang.org/pt/documentation/installation/)
 
 ## Referências
 - [CampusCode - OO](https://campuscode.com.br/conteudos/boas-fontes-e-conteudos-para-comecar-e-evoluir-em-ruby)
