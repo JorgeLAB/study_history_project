@@ -7,7 +7,7 @@
 
 #### Esta Branch possue a continuação da implementação do projeto realizado nas [lives da CampusCode](https://youtu.be/2OUyXz7BqdU)
 
-## Como executar o projeto
+## Como executar o projeto ?
 
 1. Clone o projeto para sua máquina local
 >`$ git clone https://github.com/JorgeLAB/study_history_project.git`
