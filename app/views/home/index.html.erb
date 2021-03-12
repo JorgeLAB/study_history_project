@@ -1,0 +1,11 @@
+<% @title = 'Home'%>
+
+<h1> Home - Study History </h1>
+
+<ul>
+	<% @study_items.each do |study_item|%>
+		<li><%= study_item %></li>
+	<% end %>
+</ul>
+
+<%= link_to "Criar uma Nota", new_study_item_path %>

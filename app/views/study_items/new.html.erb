@@ -1,0 +1,6 @@
+<% form_with model: @study_item do |f| %>
+  <%= f.text_field :title %>
+  <%= f.text_field :category %>
+  <%= f.text_area :description, size: "60x10" %>
+  <%= f.submit %>
+<% end %>
