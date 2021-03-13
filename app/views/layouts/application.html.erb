@@ -12,9 +12,13 @@
 
   <body>
     <%= render 'shared/header' %>
-    
+
+    <% if notice.present? %>
+      <%= notice %>
+    <% end %>
+
     <%= yield %>
-    
+
     <%= render 'shared/footer' %>
   </body>
 </html>
