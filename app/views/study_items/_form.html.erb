@@ -1,0 +1,21 @@
+<div>
+  <%= form_with model: @study_item do |f| %>
+
+    <div>
+      <p><%= f.label :title, "Tiulo" %></p>
+      <p><%= f.text_field :title %></p>
+    </div>
+
+    <div>
+      <p><%= f.label :category, "Categoria" %></p>
+      <p><%= f.text_field :category %></p>
+    </div>
+
+    <div>
+      <p><%= f.label :description, "Descrição" %></p>
+      <p><%= f.text_area :description, size: "60x10" %></p>
+    </div>
+
+    <%= f.submit %>
+  <% end %>
+</div>
